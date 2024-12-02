@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Clone</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+        <div class="left-sidebar-item">
+            <img src="https://via.placeholder.com/30" alt="Profile">
+            <span>John Doe</span>
+        </div>
+        <div class="left-sidebar-item">
+            <img src="https://via.placeholder.com/30" alt="Friends">
+            <span>Friends</span>
+        </div>
+        <div class="left-sidebar-item">
+            <img src="https://via.placeholder.com/30" alt="Groups">
+            <span>Groups</span>
+        </div>
+        <div class="left-sidebar-item">
+            <img src="https://via.placeholder.com/30" alt="Marketplace">
+            <span>Marketplace</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Create Post Section -->
+        <div class="create-post">
+            <div class="create-post-top">
+                <img src="https://via.placeholder.com/40" alt="Profile">
+                <input type="text" class="create-post-input" placeholder="What's on your mind?">
+                <button class="create-post-button">Post</button>
+            </div>
+        </div>
+
+        <!-- Posts -->
+        <div class="post">
+            <div class="post-header">
+                <img src="https://via.placeholder.com/40" alt="User">
+                <div>
+                    <strong>Jane Smith</strong>
+                    <div style="color: gray; font-size: 0.8em;">2 hours ago</div>
+                </div>
+            </div>
+            <p>Just enjoying a beautiful day!</p>
+            <img src="https://via.placeholder.com/500x300" alt="Post" style="width: 100%; margin-top: 10px;">
+            
+            <div class="post-actions">
+                <button class="post-action-button">
+                    <img src="https://via.placeholder.com/20" alt="Like">
+                    Like
+                </button>
+                <button class="post-action-button">
+                    <img src="https://via.placeholder.com/20" alt="Comment">
+                    Comment
+                </button>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <img src="https://via.placeholder.com/40" alt="User">
+                <div>
+                    <strong>Mike Johnson</strong>
+                    <div style="color: gray; font-size: 0.8em;">5 hours ago</div>
+                </div>
+            </div>
+            <p>Exciting news coming soon!</p>
+            
+            <div class="post-actions">
+                <button class="post-action-button">
+                    <img src="https://via.placeholder.com/20" alt="Like">
+                    Like
+                </button>
+                <button class="post-action-button">
+                    <img src="https://via.placeholder.com/20" alt="Comment">
+                    Comment
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="right-sidebar">
+        <h3 style="margin-bottom: 15px;">Contacts</h3>
+        <div class="friend-item">
+            <img src="https://via.placeholder.com/40" alt="Friend">
+            <span>Alice Williams</span>
+            <div class="online-status"></div>
+        </div>
+        <div class="friend-item">
+            <img src="https://via.placeholder.com/40" alt="Friend">
+            <span>Bob Taylor</span>
+            <div class="online-status"></div>
+        </div>
+        <div class="friend-item">
+            <img src="https://via.placeholder.com/40" alt="Friend">
+            <span>Charlie Brown</span>
+        </div>
+    </div>
+
+    <script>
+        // Optional: Add some basic interactivity
+        document.querySelector('.create-post-button').addEventListener('click', function() {
+            const input = document.querySelector('.create-post-input');
+            if (input.value.trim()) {
+                alert('Post created: ' + input.value);
+                input.value = '';
+            }
+        });
+    </script>
+</body>
+</html>

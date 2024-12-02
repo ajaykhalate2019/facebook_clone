@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 432px;
+    width: 100%;
+}
+
+.signup-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #1877f2;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    line-height: 38px;
+}
+
+p {
+    color: #606770;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.name-group {
+    display: flex;
+    gap: 4px;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    font-size: 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+input:focus {
+    outline: none;
+    color: #1877f2;
+}
+
+.birthday-label, .gender-label {
+    color: #606770;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.birthday-selects {
+    display: flex;
+    gap: 10px;
+}
+
+select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccd0d5;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.gender-option {
+   display: flex;
+   flex: 1;
+   border: 1px solid #ccd0d5;
+   padding: 8px;
+   border-radius: 4px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.terms {
+    font-size: 11px;
+    color: #777;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+.terms a {
+    color: #385898;
+    text-decoration: none;
+}
+
+.signup-button {
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.login-link {
+    text-align: center;
+}
+
+.login-link a {
+    color: #1877f2;
+    text-decoration: none;
+    font-weight: 500;
+}
